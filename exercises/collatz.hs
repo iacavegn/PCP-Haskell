@@ -1,3 +1,15 @@
+-- SW05, exercise 9
+
+-- Betrachten Sie folgenden Algorithmus:
+-- Eingabe: natürliche Zahl n, n > 1.
+--  Solange n > 1:
+--    n ausgeben
+--    Wenn n gerade:
+--      Setze n = n/2
+--    sonst:
+--      Setze n = 3*n + 1
+-- Welche Zahlenfolgen werden ausgegeben, wenn Sie den Algorithmus mit n=3 oder n=7 ausführen?
+
 collatz :: Int -> IO ()
 collatz n
   | n <= 1    = print n
