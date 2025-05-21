@@ -14,7 +14,7 @@ zahlen_ohne_drei = [x for x in range(1, 21) if x % 3 != 0 and x % 4 != 0]
 # Mit einer Funktion
 quadrate = [x ** 2 for x in range(1, 11)]
 
-# Ein kleines Beispiel, das Pythagoräische Tripel erzeugt
+# Beispiel, das Pythagoräische Tripel erzeugt
 pythagoreische_tripel = [
     (a, b, c)
     for c in range(1, 31)
