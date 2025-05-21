@@ -12,8 +12,8 @@ Paketverwaltung installiert, da es für unsere Zwecke nicht nötig war.
 
 In VSCode verwenden wir die Erweiterung Haskell vom Publisher Haskell. Sie benötigt den LSP-Server, welche zuvor mit ghcup installiert wurde.
 
-# Installation macOS und Linux
-Auch auf macOS und Linux kann ghcup installiert werden, wobei aber der folgende Befehl verwendet werden muss:
+# Installation Linux
+Auch auf Linux kann ghcup installiert werden, wobei aber der folgende Befehl verwendet werden muss:
 
 ```shell
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
@@ -21,6 +21,13 @@ curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 
 Die Installation von Compiler und LSP-Server folgt dann analog zur Installation auf Windows.
 
+# Installation MacOS
+Auch wenn auf der Webseite von Haskell steht, das der selbe Befehl wie bei Linux funktionieren sollte, hat dies bei Reto nicht funktioniert.
+Der Workaround war mittels [brew.sh](https://brew.sh).
+
+```shell
+brew install haskell-stack
+```
 
 # Online Playground
 Für die meisten gezeigten Übungen sollte der Haskell Online Playground: http://play.haskell.org reichen.
