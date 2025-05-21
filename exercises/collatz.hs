@@ -29,7 +29,6 @@ main = do
 
 -- Resultat bei n=3
 -- 3
--- 3
 -- 10
 -- 5
 -- 16
