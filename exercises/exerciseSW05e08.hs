@@ -18,3 +18,8 @@ sumSquares x y = aux x y 0
             | x == y = s + y^2
             | x < y  = aux (x + 1) y (s + x^2)
             | x > y  = 0
+
+main :: IO ()
+main = do
+    print (sumRange 4 5) -- 9
+    print (sumSquares 4 5) -- 41

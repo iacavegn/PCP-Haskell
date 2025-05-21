@@ -1,9 +1,6 @@
 # Python als Vergleich
-# Mit einer Funktion
+# Quadrate
 quadrate = [x ** 2 for x in range(1, 11)]
-
-# Normale Liste bis ind mit 10
-doppelte = [x for x in range(1, 11)]
 
 # Bedingung: Nur gerade Zahlen von 1 bis 20
 gerade_zahlen = [x for x in range(1, 21) if x % 2 == 0]
@@ -25,10 +22,10 @@ pythagoreische_tripel = [
 ]
 
 def main():
-    print("Doppelte:")
-    print(doppelte)
+    print("\nQuadrate:")
+    print(quadrate)
 
-    print("\nGerade Zahlen:")
+    print("\nNormale Liste:")
     print(gerade_zahlen)
 
     print("\nKombinationen:")
@@ -36,9 +33,6 @@ def main():
 
     print("\nZahlen ohne 3 und 4:")
     print(zahlen_ohne_drei)
-
-    print("\nQuadrate:")
-    print(quadrate)
 
     print("\nPythagoreische Tripel:")
     print(pythagoreische_tripel)
