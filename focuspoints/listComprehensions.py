@@ -1,6 +1,9 @@
 # Python als Vergleich
-# Vielfache von 2 von 1 bis 10
-doppelte = [x * 2 for x in range(1, 11)]
+# Mit einer Funktion
+quadrate = [x ** 2 for x in range(1, 11)]
+
+# Normale Liste bis ind mit 10
+doppelte = [x for x in range(1, 11)]
 
 # Bedingung: Nur gerade Zahlen von 1 bis 20
 gerade_zahlen = [x for x in range(1, 21) if x % 2 == 0]
@@ -11,8 +14,6 @@ kombinationen = [(x, y) for x in [1, 2] for y in ['a', 'b']]
 # Mehreren Bedingungen
 zahlen_ohne_drei = [x for x in range(1, 21) if x % 3 != 0 and x % 4 != 0]
 
-# Mit einer Funktion
-quadrate = [x ** 2 for x in range(1, 11)]
 
 # Beispiel, das Pythagoräische Tripel erzeugt
 pythagoreische_tripel = [

@@ -1,6 +1,6 @@
--- Vielfache von 2 von 1 bis 10
-doppelte :: [Int]
-doppelte = [x * 2 | x <- [1..10]]
+-- Quadrate
+quadrate :: [Int]
+quadrate = [x^2 | x <- [1..10]]
 
 -- Bedingung: Nur gerade Zahlen von 1 bis 20
 geradeZahlen :: [Int]
@@ -15,10 +15,6 @@ zahlenOhneDrei :: [Int]
 -- zahlenOhneDrei = [x | x <- [1..20], x `mod` 3 /= 0, x `mod` 4 /= 0]
 zahlenOhneDrei = [x | x <- [1..20], (/= 0) (mod x 3), (/= 0) (mod x 4)]
 
--- Mit einer Funktion
-quadrate :: [Int]
-quadrate = [x^2 | x <- [1..10]]
-
 -- Ein kleines Beispiel, das Pythagoräische Tripel erzeugt
 pythagoreischeTripel :: [(Int, Int, Int)]
 pythagoreischeTripel = [(a, b, c) |
@@ -29,8 +25,8 @@ pythagoreischeTripel = [(a, b, c) |
 
 main :: IO ()
 main = do
-    putStrLn "Doppelte:"
-    print doppelte
+    putStrLn "\nQuadrate:"
+    print quadrate
 
     putStrLn "\nGerade Zahlen:"
     print geradeZahlen
@@ -40,9 +36,6 @@ main = do
 
     putStrLn "\nZahlen ohne 3 und 4:"
     print zahlenOhneDrei
-
-    putStrLn "\nQuadrate:"
-    print quadrate
 
     putStrLn "\nPythagoreische Tripel:"
     print pythagoreischeTripel
