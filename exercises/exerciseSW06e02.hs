@@ -1,3 +1,5 @@
+module Exercises where
+
 -- SW06 exercise 02
 -- a)
 reduce :: (a -> a -> a) -> [a] -> a
