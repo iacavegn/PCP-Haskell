@@ -26,3 +26,33 @@ main = do
   if n > 1
     then collatz n
     else putStrLn "Die Zahl muss größer als 1 sein!"
+
+-- Resultat bei n=3
+-- 3
+-- 3
+-- 10
+-- 5
+-- 16
+-- 8
+-- 4
+-- 2
+-- 1
+
+-- Resultat bei n=7
+-- 7
+-- 22
+-- 11
+-- 34
+-- 17
+-- 52
+-- 26
+-- 13
+-- 40
+-- 20
+-- 10
+-- 5
+-- 16
+-- 8
+-- 4
+-- 2
+-- 1

@@ -1,3 +1,4 @@
+# Python als Vergleich
 # Vielfache von 2 von 1 bis 10
 doppelte = [x * 2 for x in range(1, 11)]
 
