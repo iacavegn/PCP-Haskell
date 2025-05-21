@@ -36,16 +36,3 @@ evens = [x | x <- [1..10], even x]
 odds :: [Integer]
 odds = [x + y | x <- [0..10], even x, y <- [0..10], odd y, x < y]
 -- beispiele aus clojure verwenden
-
-
-
-
--- ### Monaden ###
-saveDivision :: Double -> Double -> Maybe Double
-saveDivision x 0 = Nothing
-saveDivision x y = Just (x/y)
-
--- beispiel mit listen?
-result1 = saveDivision 4 0 >>= saveDivision 2
-result2 = do r <- saveDivision 4 0
-             saveDivision 3 r
